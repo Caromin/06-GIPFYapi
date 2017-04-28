@@ -3,41 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>API Website</title>
-<!-- Bootstrap is used to make game look nicer -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/style.css" type="text/css">
-<!--Here is the jquery code -->  
-  <script
-    src="https://code.jquery.com/jquery-2.2.4.js"
-    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/style.css" type="text/css">  
 </head>
-
 
 <body>
 <div class="jumbotron">
-  <h1 class="display-3">Is this API working?</h1>
-  <p class="lead">This should be a simple display that links to giphy API images below.</p>
-  <p><ul>
-  </ul></p>
-</div>
+  <h3 class="h2">Welcome to my intro to API assignments, using the GIPHY-API.</h3>
+    <small>I haven't changed much code, but just tweaked a few things so the site runs with less errors.<br /></small>
+    <small>Please, take a look at my github and web profile to see the history of coding, mostly javascript projects I have worked on. 
+      <br><br><button class="btn btn-link indent" onclick="window.open('https://github.com/Caromin')">Github</button>
+      <br><button class="btn btn-link indent" onclick="window.open('https://caromin.github.io/Caromin-WebPortfolio/')">Personal Web Portfolio</button>
+    </small>
+</div>  
 <br />
 
 <!--Where all the buttons will append to -->
-<div id="imagesId" class="container movies">
+<div id="imagesId" class="container d-flex flex-wrap">
 </div>
 <!--having it in a form allows for the enter command to be used -->
-<form>
-<input id="pushItem" type="text">
-<button id= "pushButton" type="submit">add to list</button>
-</form>
-<div id="giphyId" class="container"></div>
+<div class="container">
+  <div>
+    <form>
+    <input id="pushItem" type="text">
+    <button id= "pushButton" type="submit">add to list</button>
+    </form>
+  </div>
+  <div id="giphyId" class="container d-flex flex-wrap"></div>
+</div>
 
-<div id="footer">
+<footer class="footer">
   &copy 2017 Christian Aromin <br />
 </div>
 
-
+<script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/javascript.js"></script>
 </body>
 </html>
