@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Trivia Game: Easy Ver.</title>
-	<link href="assets/images">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-<!--Here is the jquery code -->	 
-	<script
-	  src="https://code.jquery.com/jquery-2.2.4.js"
-	  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-	  crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<title>API Website</title>
+<!-- Bootstrap is used to make game look nicer -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css" type="text/css">
+<!--Here is the jquery code -->  
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-
-<!--Start of main container -->
-<div id="maincontainer" class="container">
-<h1>Basic Trivia Game</h1>
-
-	<div>
-	Time Remaining: <p id="timerDiv">00:00 Test</p>
-	</div>
-
-	<div id="quiz" class="container">
-	</div>
-
-	<div>
-		<button id="next">Next</button>
-		<button id="restart">Restart</button>
-	</div>	
-		<br />
-
-<!--End of main container -->
+<div class="jumbotron">
+  <h1 class="display-3">Is this API working?</h1>
+  <p class="lead">This should be a simple display that links to giphy API images below.</p>
+  <p><ul>
+  </ul></p>
 </div>
+<br />
 
-<!--Test for adding a footer via javascript -->
+<!--Where all the buttons will append to -->
+<div id="imagesId" class="container movies">
+</div>
+<!--having it in a form allows for the enter command to be used -->
+<form>
+<input id="pushItem" type="text">
+<button id= "pushButton" type="submit">add to list</button>
+</form>
+<div id="giphyId" class="container"></div>
+
 <div id="footer">
-HTML test, will be replaced
+  &copy 2017 Christian Aromin <br />
 </div>
 
 
-<script src="assets/javascript/app.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/javascript.js"></script>
 </body>
-
 </html>
