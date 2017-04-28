@@ -1,0 +1,38 @@
+.container {
+	background-color: #ffffff;
+	border: 2px solid black;
+	box-sizing: border-box;
+	margin: 10px 0;
+	width: 100%;
+	text-align: center;
+	color: #000000;
+}
+
+body {
+	background-image: url("../../assets/images/mainbackground2.png");
+}
+
+#footer {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	background-color: #3661A2;
+	position: absolute;
+	color: #ffffff;
+}
+
+#maincontainer {
+	background-color: #3661A2;
+	color: #ffffff;
+}
+
+button {
+	color: #000000;
+}
+
+#timerDiv {
+	font-size: 26px;
+} 
