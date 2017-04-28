@@ -43,7 +43,7 @@ var theMovie = $(this).attr("data-value");
 var limit = 10;
 
 //---------------------------------------------		
-var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     theMovie + "&limit=" + limit + "&api_key=dc6zaTOxFJmzC";
 
 
